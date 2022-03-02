@@ -16,7 +16,7 @@ const ItemDetail = () => {
             <h2 className="breadcrumb-title">Item Details</h2>
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb justify-content-center">
-                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li className="breadcrumb-item"><a href="/">Home</a></li>
                 <li className="breadcrumb-item active" aria-current="page">Item Details</li>
               </ol>
             </nav>

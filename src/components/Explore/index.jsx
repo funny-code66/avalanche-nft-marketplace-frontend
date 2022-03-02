@@ -1,4 +1,68 @@
+import { useEffect } from "react"
+import NFTItem from "../Home/NFTItem"
+const nfts = [
+  {
+    image: '/img/bg-img/13.jpg',
+    featured: true,
+    bid: 0.861,
+    userImage: '/img/bg-img/u1.jpg',
+    name: 'Monkey Arts #114',
+    nickname: '@nft_fun',
+    price: 0.861
+  },
+  {
+    image: '/img/bg-img/14.jpg',
+    bid: 2.961,
+    userImage: '/img/bg-img/u2.jpg',
+    name: 'Two Monkey\'s Fun',
+    nickname: '@creative_art',
+    price: 2.961,
+    love: true
+  },
+  {
+    image: '/img/bg-img/15.jpg',
+    bid: 0.06,
+    userImage: '/img/bg-img/u3.jpg',
+    name: 'Kings with Bitcoin',
+    nickname: '@designing_world',
+    price: 0.06,
+    love: true
+  },
+  {
+    image: '/img/bg-img/16.jpg',
+    bid: 0.01,
+    userImage: '/img/bg-img/u4.jpg',
+    name: 'Pixel Plane',
+    nickname: '@nft_fun',
+    price: 0.01
+  },
+  {
+    image: '/img/bg-img/17.jpg',
+    hot: true,
+    bid: 0.324,
+    userImage: '/img/bg-img/u1.jpg',
+    name: 'Macaw Bird',
+    nickname: '@creative_art',
+    price: 0.324
+  },
+  {
+    image: '/img/bg-img/18.jpg',
+    bid: 9.32,
+    userImage: '/img/bg-img/u2.jpg',
+    name: 'Sculpture Human Face',
+    nickname: '@designing_world',
+    price: 9.32
+  }
+]
+
 const Explore = () => {
+  useEffect(() => {
+    const script = document.createElement("script")
+    script.src = "/js/active.js"
+    script.async = true
+
+    document.body.appendChild(script)
+  }, [])
   return (
     <>
       <div className="breadcrumb-wrapper">
@@ -7,7 +71,7 @@ const Explore = () => {
             <h2 className="breadcrumb-title">Explore One</h2>
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb justify-content-center">
-                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li className="breadcrumb-item"><a href="/">Home</a></li>
                 <li className="breadcrumb-item active" aria-current="page">Explore</li>
               </ol>
             </nav>
@@ -88,523 +152,13 @@ const Explore = () => {
         <div className="w-100 mb-70 d-block"></div>
         <div className="container">
           <div className="row g-4 justify-content-center">
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/13.jpg" alt="" />
-
-                    <div className="badge bg-primary position-absolute"><img src="img/core-img/fire.png" alt="" />Featured</div>
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="dd98hg7" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dd98hg7">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.861 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u1.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Monkey Arts #114">Monkey Arts #114</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@nft_fun</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.861 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/14.jpg" alt="" />
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="dds211" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dds211">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 2.961 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn active" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u2.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Two Monkey's Fun">Two Monkey's Fun</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@creative_art</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">2.961 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/15.jpg" alt="" />
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="ddfnj87" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="ddfnj87">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.06 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u3.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Kings with Bitcoin">Kings with Bitcoin</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@designing_world</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.06 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/16.jpg" alt="" />
-
-                    <div className="badge bg-dark position-absolute"><img src="img/core-img/fire.png" alt="" />New Bid</div>
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="ddffee" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="ddffee">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.01 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u4.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Pixel Plane">Pixel Plane</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@nft_fun</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.01 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/17.jpg" alt="" />
-                    <div className="badge bg-dark position-absolute"><img src="img/core-img/fire.png" alt="" />Hot bid</div>
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="cads78s78" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cads78s78">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.324 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn active" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u1.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Macaw Bird">Macaw Bird</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@creative_art</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.324 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/18.jpg" alt="" />
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="dd78e99" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dd78e99">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 9.32 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u2.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Sculpture Human Face">Sculpture Human Face</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@designing_world</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">9.32 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/13.jpg" alt="" />
-                    <div className="badge bg-primary position-absolute"><img src="img/core-img/fire.png" alt="" />Featured</div>
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="dd98jl7" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dd98jl7">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.861 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u1.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Monkey Arts #114">Monkey Arts #114</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@nft_fun</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.861 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/14.jpg" alt="" />
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="ddbbww211" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="ddbbww211">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 2.961 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn active" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u2.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Two Monkey's Fun">Two Monkey's Fun</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@creative_art</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">2.961 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/15.jpg" alt="" />
-
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="ddfws87" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="ddfws87">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.06 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u3.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Kings with Bitcoin">Kings with Bitcoin</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@designing_world</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.06 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/16.jpg" alt="" />
-                    <div className="badge bg-dark position-absolute"><img src="img/core-img/fire.png" alt="" />New Bid</div>
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="ddesee" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="ddesee">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.01 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u4.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Pixel Plane">Pixel Plane</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@nft_fun</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.01 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/17.jpg" alt="" />
-                    <div className="badge bg-dark position-absolute"><img src="img/core-img/fire.png" alt="" />Hot bid</div>
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="cadss4578" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="cadss4578">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 0.324 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn active" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u1.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Macaw Bird">Macaw Bird</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@creative_art</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">0.324 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div className="nft-card card shadow-sm">
-                <div className="card-body">
-                  <div className="img-wrap"><img src="img/bg-img/18.jpg" alt="" />
-                    <div className="dropdown">
-                      <button className="btn dropdown-toggle rounded-pill shadow-sm" id="dd78as99" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-three-dots-vertical"></i></button>
-                      <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dd78as99">
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-share"></i>Share</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-flag"></i>Report</a></li>
-                        <li><a className="dropdown-item" href="#"><i className="me-1 bi bi-bookmark"></i>Bookmark</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-8"><span className="d-block fz-12"><i className="bi bi-arrow-up"></i>Hightest bid 9.32 ETH</span></div>
-                    <div className="col-4 text-end">
-                      <button className="wishlist-btn" type="button"><i className="bi"></i></button>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-2">
-                    <div className="col-8">
-                      <div className="name-info d-flex align-items-center">
-                        <div className="author-img position-relative"><img className="shadow" src="img/bg-img/u2.jpg" alt="" /><i className="bi bi-check position-absolute bg-success"></i></div>
-                        <div className="name-author"><a className="name d-block hover-primary fw-bold text-truncate" href="item-details.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Sculpture Human Face">Sculpture Human Face</a><a className="author d-block fz-12 hover-primary text-truncate" href="author.html">@designing_world</a></div>
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="price text-end"><span className="fz-12 d-block">Current Bid</span>
-                        <h6 className="mb-0">9.32 ETH</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row gx-2 align-items-center mt-3">
-                    <div className="col-6"><a className="btn btn-primary btn-sm rounded-pill" href="#">Place bid</a></div>
-                    <div className="col-6 text-end"><a className="btn btn-minimal btn-sm hover-primary" href="activity.html"> <i className="bi bi-activity me-1"></i>Activity</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {
+              nfts.map(nft => <NFTItem image={nft.image} featured={nft.featured} bid={nft.bid} userImage={nft.userImage} name={nft.name} nickname={nft.nickname} price={nft.price} love={nft.love} newBid={nft.newBid} hot={nft.hot} sold={nft.sold} key={nft.name} />)
+            }
           </div>
         </div>
       </div>
-      <div className="funto-pagination mt-70">
+      <div className="funto-pagination mt-70" style={{ paddingBottom: '50px' }}>
         <nav aria-label="Page navigation example">
           <ul className="pagination justify-content-center mb-0">
             <li className="page-item active"><a className="page-link" href="#">1</a></li>

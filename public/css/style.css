@@ -1075,16 +1075,17 @@ table {
 }
 .header-area .header-meta .search-form {
   z-index: 100;
+  margin-right:50px;
 }
 .header-area .header-meta .search-form .form-control {
-  width: 120px;
+  width: 200px;
   height: 40px;
   padding: 0.2rem 0.875rem;
   border-radius: 0.5rem;
 }
 @media only screen and (min-width:1200px) {
   .header-area .header-meta .search-form .form-control {
-    width: 180px;
+    width: 400px;
   }
 }
 .header-area .header-meta .search-form button {
@@ -3011,7 +3012,7 @@ textarea.form-control {
 [data-theme=dark] .header-area.sticky-on {
   background-color: #1f0757;
 }
-[data-theme=dark] .header-area.mobile-menu-open {
+[data-theme=dark] .header-area{
   background-color: #1f0757;
 }
 [data-theme=dark] .header-area .navbar-toggler {
@@ -3364,4 +3365,17 @@ textarea.form-control {
 [data-theme=dark] .register-card p a,
 [data-theme=dark] .register-form .form-group label.label-psswd {
   color: #ffffff;
+}
+
+.owned-title  {
+  text-align: center;
+    color: white !important;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media(max-width:1200px) {
+  .container {
+    max-width:95%;
+  }
 }

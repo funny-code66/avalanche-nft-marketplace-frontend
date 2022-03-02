@@ -85,6 +85,49 @@ const topBuyers = [
   }
 ]
 
+const auctions = [
+  {
+    nftImage: '/img/bg-img/9.jpg',
+    newBid: true,
+    date: 'March 31, 2022 14:19:54',
+    stocks: 3,
+    userImage: '/img/bg-img/u4.jpg',
+    name: 'Fancy Car',
+    nickname: '@fancy_car',
+    price: 0.784
+  },
+  {
+    nftImage: '/img/bg-img/10.jpg',
+    newBid: true,
+    date: 'April 4, 2023 00:00:00',
+    stocks: 11,
+    userImage: '/img/bg-img/u1.jpg',
+    name: 'Animal Playing with Guiter',
+    nickname: '@creative_world',
+    price: 0.784
+  },
+  {
+    nftImage: '/img/bg-img/11.jpg',
+    newDone: true,
+    date: 'Feb 28, 2022 12:34:00',
+    stocks: 0,
+    userImage: '/img/bg-img/u2.jpg',
+    name: 'Halloween #471',
+    nickname: '@fancy_car',
+    price: 0.784
+  },
+  {
+    nftImage: '/img/bg-img/12.jpg',
+    newHot: true,
+    date: 'December 31, 2022 14:19:39',
+    stocks: 29,
+    userImage: '/img/bg-img/u3.jpg',
+    name: 'Vigor Dance',
+    nickname: '@fancy_nft',
+    price: 0.784
+  }
+]
+
 const nfts = [
   {
     image: '/img/bg-img/13.jpg',
@@ -360,7 +403,26 @@ const Home = () => {
       </div>
     </div>
     <div className="divider"></div>
-    <LiveAuctions />
+    <div className="live-bidding-wrapper bg-gray pt-120 pb-120">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-7">
+            <div className="section-heading d-flex align-items-center">
+              <div className="spinner-grow text-danger" role="status"><span className="visually-hidden">Loading...</span></div>
+              <h2 className="mb-0 ms-2">Live Auctions</h2>
+            </div>
+          </div>
+          <div className="col-5 text-end"><a className="btn rounded-pill btn-outline-primary btn-sm border-2 mb-5" href="live-bidding.html">View All Auctions</a></div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row g-4 justify-content-center">
+          {
+            auctions.map((auction) => <LiveAuctions nftImage={auction.nftImage} newBid={auction.newBid} newDone={auction.newDone} newHot={auction.newHot} date={auction.date} stocks={auction.stocks} userImage={auction.userImage} name={auction.name} nickname={auction.nickname} price={auction.price} />)
+          }
+        </div>
+      </div>
+    </div>
     <div className="divider"></div>
     <div className="discover-nft-wrapper">
       <div className="container">
@@ -370,15 +432,7 @@ const Home = () => {
               <h2 className="mb-0">Discover</h2>
             </div>
           </div>
-          <div className="col-12 col-md-8">
-            <div className="filters-button-group d-flex justify-content-md-end flex-wrap">
-              <button className="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2 active" type="button" data-filter="*"><i className="fz-16 bi bi-collection"></i>All</button>
-              <button className="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" data-filter=".art"><i className="fz-16 bi bi-palette"></i>Art</button>
-              <button className="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" data-filter=".cards"><i className="fz-16 bi bi-card-image"></i>Cards</button>
-              <button className="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" data-filter=".collectibles"><i className="fz-16 bi bi-list-stars"></i>Collectibles</button>
-              <button className="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" data-filter=".photos"><i className="fz-16 bi bi-image"></i>Photos</button>
-            </div>
-          </div>
+
         </div>
       </div>
       <div className="container">

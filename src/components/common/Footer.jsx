@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="row">
 
           <div className="col-12 col-lg-5">
-            <div className="footer-widget-area mb-70 pe-lg-4 pe-xl-5 me-lg-4 me-xl-5 border-end"><a className="d-block mb-4" href="index.html"><img className="light-logo" src="/img/core-img/logo.png" alt="" /><img className="dark-logo" src="/img/core-img/logo-white.png" alt="" /></a>
+            <div className="footer-widget-area mb-70 pe-lg-4 pe-xl-5 me-lg-4 me-xl-5 border-end"><a className="d-block mb-4" href="/"><img className="light-logo" src="/img/core-img/logo.png" alt="" /><img className="dark-logo" src="/img/core-img/logo-white.png" alt="" /></a>
               <p>It's crafted with the latest trend of design &amp; coded with all modern approaches.</p>
               <p className="mb-0">Call: +123 456 789 <br /> Email: help@example.com</p>
 

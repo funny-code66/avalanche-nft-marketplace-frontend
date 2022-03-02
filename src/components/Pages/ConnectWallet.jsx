@@ -4,18 +4,18 @@ const walletItems = [
     name: 'Metamask',
     state: 'Hot',
   },
-  {
-    image: 'img/bg-img/coinbase.png',
-    name: 'Coinbase Wallet'
-  },
-  {
-    image: 'img/bg-img/kaikas.png',
-    name: 'Kaikas'
-  },
-  {
-    image: 'img/bg-img/venly.png',
-    name: 'Venly'
-  },
+  // {
+  //   image: 'img/bg-img/coinbase.png',
+  //   name: 'Coinbase Wallet'
+  // },
+  // {
+  //   image: 'img/bg-img/kaikas.png',
+  //   name: 'Kaikas'
+  // },
+  // {
+  //   image: 'img/bg-img/venly.png',
+  //   name: 'Venly'
+  // },
 ]
 
 const ConnectWallet = () => {

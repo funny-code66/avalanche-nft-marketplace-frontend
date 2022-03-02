@@ -7,20 +7,20 @@ const Header = () => <header className="header-area">
         <ul className="navbar-nav navbar-nav-scroll my-2 my-lg-0">
           <li className="ft-dd"><a href="#">Home</a>
             <ul className="ft-dd-menu">
-              <li><a href="home-1.html">Home Variation 1</a></li>
+              <li><a href="/">Home Variation 1</a></li>
               <li><a href="home-2.html">Home Variation 2</a></li>
             </ul>
           </li>
           <li className="ft-dd"><a href="#">Explore</a>
             <ul className="ft-dd-menu">
-              <li><a href="explore-1.html">Explore 1</a></li>
+              <li><a href="/explore">Explore 1</a></li>
               <li><a href="explore-2.html">Explore 2</a></li>
               <li><a href="featured-items.html">Featured Drops</a></li>
-              <li><a href="live-bidding.html">Live Auctions</a></li>
-              <li><a href="collections.html">Collections</a></li>
+              <li><a href="/liveautions">Live Auctions</a></li>
+              <li><a href="/collection">Collections</a></li>
               <li><a href="top-seller.html">Top Seller</a></li>
               <li><a href="top-buyer.html">Top Buyer</a></li>
-              <li><a href="item-details.html">Item Details</a></li>
+              <li><a href="/itemdetail">Item Details</a></li>
             </ul>
           </li>
           <li className="ft-dd"><a href="#">Admin</a>
@@ -38,7 +38,7 @@ const Header = () => <header className="header-area">
               <li><a href="activity.html">Activity</a></li>
               <li><a href="ranking.html">Ranking</a></li>
               <li><a href="create-new.html">Create New Items</a></li>
-              <li><a href="connet-wallet.html">Connect Wallet</a></li>
+              <li><a href="/connectwallet">Connect Wallet</a></li>
               <li><a href="author.html">Author Profile</a></li>
               <li className="ft-dd"><a href="#">Authentification</a>
                 <ul className="ft-dd-menu">

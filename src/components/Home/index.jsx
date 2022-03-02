@@ -303,7 +303,7 @@ const Home = () => {
     </div>
     <div className="divider"></div>
 
-    <div className="top-seller-wrapper">
+    {/* <div className="top-seller-wrapper">
       <div className="container">
         <div className="row g-4 g-lg-5 justify-content-center">
           <div className="col-12 col-sm-10 col-md-6 col-lg-5 col-xl-4">
@@ -401,8 +401,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
-    <div className="divider"></div>
+    </div> */}
     <div className="live-bidding-wrapper bg-gray pt-120 pb-120">
       <div className="container">
         <div className="row align-items-center">
@@ -424,7 +423,7 @@ const Home = () => {
       </div>
     </div>
     <div className="divider"></div>
-    <div className="discover-nft-wrapper">
+    {/* <div className="discover-nft-wrapper">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-md-4">
@@ -446,8 +445,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
-    <div className="divider"></div>
+    </div> */}
     <div className="popular-collection-wrapper">
       <div className="container">
         <div className="section-heading position-relative z-index-1000 d-flex align-items-center justify-content-center">

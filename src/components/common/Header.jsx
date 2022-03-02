@@ -13,10 +13,9 @@ const Header = () => <header className="header-area">
               <li><a href="/explore">Explore</a></li>
               <li><a href="/liveautions">Live Auctions</a></li>
               <li><a href="/collection">Collections</a></li>
-              <li><a href="/itemdetail">Item Details</a></li>
             </ul>
           </li>
-          <li><a href="/dashboard">Admin</a>
+          <li><a href="/profile">Profile</a>
           </li>
           <li><a href="/connectwallet">Connect Wallet</a>
           </li>

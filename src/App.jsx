@@ -31,7 +31,7 @@ function App() {
         <Route path='/collection' element={<React.Fragment><Collection collection /></React.Fragment>} />
         <Route path='/itemdetail' element={<React.Fragment><ItemDetail /></React.Fragment>} />
         <Route path='/connectwallet' element={<React.Fragment><ConnectWallet /></React.Fragment>} />
-        <Route path='/dashboard' element={<React.Fragment><Admin /></React.Fragment>} />
+        <Route path='/profile' element={<React.Fragment><Admin /></React.Fragment>} />
       </Routes>
       <Footer />
     </Fragment>

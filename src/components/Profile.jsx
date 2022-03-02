@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import NFTItem from "../Home/NFTItem"
-import AutionItem from "../Home/AutionItem"
+import NFTItem from "./Home/NFTItem"
+import AutionItem from "./Home/AutionItem"
 
 const nfts = [
   {
@@ -84,7 +84,7 @@ const auctions = [
   }
 ]
 
-const Dashboard = () => {
+const Profile = () => {
   useEffect(() => {
     // script.src = "/js/all-js-libraries.js"
     // script.async = true
@@ -100,6 +100,34 @@ const Dashboard = () => {
   }, [])
   return (
     <>
+      <div class="author-top-content bg-img bg-overlay" style={{ backgroundImage: 'url(img/bg-img/44.jpg)' }}>
+        <div class="container">
+          <div class="card border-0 bg-transparent">
+            <div class="card-body p-4 p-sm-5">
+              <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-7 col-sm-4 col-lg-3">
+                  <div class="author-thumbnail"><img class="rounded" src="img/bg-img/u1.jpg" alt="" /><i class="bi bi-patch-check-fill" data-bs-toggle="tooltip" data-bs-placement="top" title="Verified"></i></div>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-9">
+                  <div class="author-data">
+                    <h3 class="mb-2 author-name text-white">Designing World<a class="btn btn-warning btn-sm rounded-pill align-top ms-2 px-3 py-1" href="#">Follow</a></h3>
+                    <div class="btn btn-minimal d-inline-block mb-3 text-white hover-warning">@designing_world</div>
+                    <p class="w-75 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quaerat quis similique natus rem.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown author-dd">
+              <button class="dropdown-toggle" id="dd9887" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dd9887">
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#shareModal"><i class="me-1 bi bi-share"></i>Share</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#copylinkModal"><i class="me-1 bi bi-box-arrow-up-right"></i>Copy Link</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportModal"><i class="me-1 bi bi-flag"></i>Report</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="funto-tab-area" style={{ padding: '150px 0px 100px' }}>
         <div className="container">
           <div className="row">
@@ -213,4 +241,4 @@ const Dashboard = () => {
     </>
   );
 }
-export default Dashboard
+export default Profile

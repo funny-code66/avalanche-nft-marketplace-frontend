@@ -7,7 +7,6 @@ const Header = ({ address, connect, disconnect }) => {
         <div className="collapse navbar-collapse" id="funtoNav">
           <ul className="navbar-nav navbar-nav-scroll my-2 my-lg-0">
             <li ><a href="/">Home</a>
-
             </li>
             <li className="ft-dd"><a href="#">Explore</a>
               <ul className="ft-dd-menu">

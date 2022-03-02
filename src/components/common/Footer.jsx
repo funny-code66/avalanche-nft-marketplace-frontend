@@ -27,12 +27,8 @@ const Footer = () => {
                 <div className="footer-widget-area mb-70">
                   <h5 className="mb-4">Explore</h5>
                   <ul className="list-unstyled mb-0">
-                    <li><a href="featured-items.html">Featured Drops</a></li>
                     <li><a href="live-bidding.html">Live Auctions</a></li>
                     <li><a href="collections.html">Collections</a></li>
-                    <li><a href="top-seller.html">Top Seller</a></li>
-                    <li><a href="top-buyer.html">Top Buyer</a></li>
-                    <li><a href="item-details.html">Item Details</a></li>
                   </ul>
                 </div>
               </div>
@@ -43,10 +39,10 @@ const Footer = () => {
                     <li><a href="#">Art</a></li>
                     <li><a href="#">Cards</a></li>
                     <li><a href="#">Collectibles</a></li>
-                    <li><a href="#">Domain</a></li>
+                    {/* <li><a href="#">Domain</a></li>
                     <li><a href="#">Photos</a></li>
                     <li><a href="#">Sports</a></li>
-                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Videos</a></li> */}
                   </ul>
                 </div>
               </div>

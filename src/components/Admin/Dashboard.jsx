@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import NFTItem from "../Home/NFTItem"
-import LiveAuctions from "../Home/LiveAuctions"
+import AutionItem from "../Home/AutionItem"
 
 const nfts = [
   {
@@ -129,7 +129,7 @@ const Dashboard = () => {
                       <div className="card-body p-4">
                         <div className="row g-4 justify-content-center">
                           {
-                            auctions.map((auction) => <LiveAuctions nftImage={auction.nftImage} newBid={auction.newBid} newDone={auction.newDone} newHot={auction.newHot} date={auction.date} stocks={auction.stocks} userImage={auction.userImage} name={auction.name} nickname={auction.nickname} price={auction.price} />)
+                            auctions.map((auction) => <AutionItem nftImage={auction.nftImage} newBid={auction.newBid} newDone={auction.newDone} newHot={auction.newHot} date={auction.date} stocks={auction.stocks} userImage={auction.userImage} name={auction.name} nickname={auction.nickname} price={auction.price} />)
                           }
                         </div>
                       </div>

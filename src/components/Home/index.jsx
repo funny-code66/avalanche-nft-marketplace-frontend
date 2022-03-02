@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from "react"
 import Carousel from "./Carousel"
-import LiveAuctions from "./LiveAuctions"
+import AutionItem from "./AutionItem"
 import Collection from './Collection'
 import NFTItem from "./NFTItem"
 
@@ -418,7 +418,7 @@ const Home = () => {
       <div className="container">
         <div className="row g-4 justify-content-center">
           {
-            auctions.map((auction) => <LiveAuctions nftImage={auction.nftImage} newBid={auction.newBid} newDone={auction.newDone} newHot={auction.newHot} date={auction.date} stocks={auction.stocks} userImage={auction.userImage} name={auction.name} nickname={auction.nickname} price={auction.price} />)
+            auctions.map((auction) => <AutionItem nftImage={auction.nftImage} newBid={auction.newBid} newDone={auction.newDone} newHot={auction.newHot} date={auction.date} stocks={auction.stocks} userImage={auction.userImage} name={auction.name} nickname={auction.nickname} price={auction.price} />)
           }
         </div>
       </div>

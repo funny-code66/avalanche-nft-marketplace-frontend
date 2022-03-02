@@ -8,10 +8,10 @@ import Home from './pages/Home'
 import Explore from './pages/Explore'
 import ConnectWallet from './pages/ConnectWallet'
 import Admin from './pages/Admin'
-import LiveAuctions from './pages/LiveAuctions'
 
 
 import ItemDetail from './components/Explore/ItemDetail'
+import LiveAuctions from './components/Home/LiveAuction'
 import Header from './components/common/Header'
 import Collection from './components/Home/Collection'
 import Footer from './components/common/Footer'

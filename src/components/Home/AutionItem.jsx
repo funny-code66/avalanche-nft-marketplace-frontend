@@ -1,12 +1,9 @@
-const LiveAuctions = ({ nftImage, newBid, newDone, newHot, date, stocks, userImage, name, nickname, price }) => <div className="col-12 col-sm-6 col-lg-4 col-xl-3" key={name}>
+const AutionItem = ({ nftImage, newBid, newDone, newHot, date, stocks, userImage, name, nickname, price }) => <div className="col-12 col-sm-6 col-lg-4 col-xl-3" key={name}>
   <div className="nft-card card border-0">
     <div className="card-body">
       <div className="img-wrap"><img src={nftImage} alt="" />
         {
           !!newBid && <div className="badge bg-dark position-absolute"><img src="/img/core-img/fire.png" alt="" />New Bid</div>
-        }
-        {
-          console.log('date:', date)
         }
         {
           !!newDone && <div className="badge bg-danger position-absolute"><img src="/img/core-img/fire.png" alt="" />Bid Done</div>
@@ -54,4 +51,4 @@ const LiveAuctions = ({ nftImage, newBid, newDone, newHot, date, stocks, userIma
 </div>
 
 
-export default LiveAuctions
+export default AutionItem

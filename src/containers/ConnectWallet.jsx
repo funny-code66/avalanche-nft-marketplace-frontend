@@ -1,4 +1,4 @@
-import ConnectWalletComponent from '../components/Pages/ConnectWallet'
+import ConnectWalletComponent from '../components/ConnectWallet'
 
 const ConnectWallet = () => <ConnectWalletComponent />
 

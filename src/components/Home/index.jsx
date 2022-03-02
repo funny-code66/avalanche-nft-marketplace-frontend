@@ -489,7 +489,6 @@ const Home = () => {
               </div>
             </div>)
           }
-
         </div>
       </div>
     </div>
@@ -516,9 +515,6 @@ const Home = () => {
     </div>
     <div className="divider"></div>
     <Collection home />
-
-
-
     <div id="scrollTopButton"><i className="bi bi-arrow-up-short"></i></div>
   </Fragment >
 }

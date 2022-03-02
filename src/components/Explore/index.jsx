@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import NFTItem from "../Home/NFTItem"
+
 const nfts = [
   {
     image: '/img/bg-img/13.jpg',
@@ -59,8 +60,7 @@ const Explore = () => {
   useEffect(() => {
     const script = document.createElement("script")
     script.src = "/js/active.js"
-    script.async = true
-
+    script.async = TrustedScript
     document.body.appendChild(script)
   }, [])
   return (
@@ -173,4 +173,5 @@ const Explore = () => {
     </>
   )
 }
+
 export default Explore

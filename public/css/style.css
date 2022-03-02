@@ -2004,7 +2004,7 @@ table {
   font-weight: 700;
   color: #1f0757;
   background-color: #ffffff;
-  margin-right: 1rem;
+  margin: 10px;
 }
 .tab--area .nav-tabs .nav-item .nav-link.active {
   background-color: #0d6efd;
@@ -3378,4 +3378,60 @@ textarea.form-control {
   .container {
     max-width:95%;
   }
+}
+
+.attributes-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.attributes-body div {
+  width:29%;
+  padding: 10px 15px;
+  background:#0c153b;
+  margin:10px;
+  border-radius:8px;
+}
+.attributes-body p {
+  margin:0
+}
+.details-body h2 {
+  text-align: center;
+}
+.details-body div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media(max-width:450px) {
+  .attributes-body p {
+    font-size: 15px;
+  }
+  .details-body div p{
+    font-size: 14px;
+  }
+  .activities-header ul {
+    padding:0
+  }
+}
+
+.itemdetail-content {
+  background: #37266f;
+  padding: 15px;
+  border-radius: 15px;
+}
+.itemdetail-transfer {
+  display: flex;
+  justify-content: space-between;
+}
+.itemdetail-transfer p {
+  margin:0;
+  font-size:20px;
+  color:white;
+}
+
+.created-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  margin-top:0px;
 }

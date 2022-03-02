@@ -43,36 +43,32 @@ const auctions = [
   }
 ]
 
-const LiveAuction = () => {
-  return (
-    <>
-      <div class="breadcrumb-wrapper">
-        <div class="container">
-          <div class="breadcrumb-content">
-            <div class="d-flex align-items-center justify-content-center">
-              <div class="spinner-grow text-danger me-1" role="status"><span class="visually-hidden">Loading...</span></div>
-              <h2 class="breadcrumb-title mb-0">Live Autions</h2>
-            </div>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Live Autions</li>
-              </ol>
-            </nav>
-          </div>
+const LiveAuction = () => <>
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="spinner-grow text-danger me-1" role="status"><span class="visually-hidden">Loading...</span></div>
+          <h2 class="breadcrumb-title mb-0">Live Autions</h2>
         </div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Live Autions</li>
+          </ol>
+        </nav>
       </div>
-      <div class="divider"></div>
-      <div class="live-bids-wrapper" style={{ paddingBottom: '150px' }}>
-        <div class="container">
-          <div class="row g-4 justify-content-center">
-            {
-              auctions.map((auction) => <AutionItem nftImage={auction.nftImage} newBid={auction.newBid} newDone={auction.newDone} newHot={auction.newHot} date={auction.date} stocks={auction.stocks} userImage={auction.userImage} name={auction.name} nickname={auction.nickname} price={auction.price} />)
-            }
-          </div>
-        </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="live-bids-wrapper" style={{ paddingBottom: '150px' }}>
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        {
+          auctions.map((auction) => <AutionItem nftImage={auction.nftImage} newBid={auction.newBid} newDone={auction.newDone} newHot={auction.newHot} date={auction.date} stocks={auction.stocks} userImage={auction.userImage} name={auction.name} nickname={auction.nickname} price={auction.price} />)
+        }
       </div>
-    </>
-  )
-}
+    </div>
+  </div>
+</>
 export default LiveAuction

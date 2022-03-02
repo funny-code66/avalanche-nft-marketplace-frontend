@@ -3,7 +3,7 @@ import {
   DISCONNECT_WALLET,
   UPDATE_PROFILE,
   LOAD_ARTISTS
-} from '../constants/actionTypes/auth'
+} from '../constants/actionTypes/profile'
 
 export const connectWallet = wallet => ({ type: CONNECT_WALLET, wallet })
 

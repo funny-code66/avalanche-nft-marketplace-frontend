@@ -12,7 +12,7 @@ import Admin from './pages/Admin'
 
 import ItemDetail from './components/Explore/ItemDetail'
 import LiveAuctions from './components/Home/LiveAuction'
-import Header from './components/common/Header'
+import Header from './containers/Header'
 import Collection from './components/Home/Collection'
 import Footer from './components/common/Footer'
 

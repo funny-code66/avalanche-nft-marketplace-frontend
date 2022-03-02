@@ -1,19 +1,6 @@
-// ==========test heroku==========//
-// const API_URL = 'https://vemarket.herokuapp.com/api'
-
-// ==========main heroku==========//
-const API_URL = 'https://veblackmarket.herokuapp.com/api'
-const NODE = 'https://mainnet.veblocks.net/'
-const NETWORK = 'main'
-
-// const API_URL = 'http://localhost:3001/api'
-// const NODE = 'https://testnet.veblocks.net/'
-// const NETWORK = 'test'
-const ITEMSPERPAGE = 12
-
+const MarketplaceContractAddress = '0x5d2E08d030eFb1EB7b200b317eb4d8a2cd37A554'
+const CHAINID = '0xa86a'
 export {
-    API_URL,
-    NODE,
-    NETWORK,
-    ITEMSPERPAGE
+  MarketplaceContractAddress,
+  CHAINID
 }

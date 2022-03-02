@@ -44,7 +44,7 @@ const auctions = [
 ]
 
 const LiveAuction = () => {
-  reutrn(
+  return (
     <>
       <div class="breadcrumb-wrapper">
         <div class="container">

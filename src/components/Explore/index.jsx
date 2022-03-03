@@ -60,7 +60,7 @@ const Explore = () => {
   useEffect(() => {
     const script = document.createElement("script")
     script.src = "/js/active.js"
-    script.async = TrustedScript
+    script.async = true
     document.body.appendChild(script)
   }, [])
   return (
@@ -85,7 +85,7 @@ const Explore = () => {
             <div className="col-12 col-sm-6 col-lg-3">
               <h5>Status</h5>
               <select className="filter-select bg-gray w-100">
-                <option selected value="buy-now">Buy Now</option>
+                <option value="buy-now">Buy Now</option>
                 <option value="on-auction">On Auction</option>
                 <option value="new">New</option>
                 <option value="featured">Featured</option>
@@ -94,7 +94,7 @@ const Explore = () => {
             <div className="col-12 col-sm-6 col-lg-3">
               <h5>Categories</h5>
               <select className="filter-select2 bg-gray w-100">
-                <option selected value="1">Art</option>
+                <option value="1">Art</option>
                 <option value="2">Cards</option>
                 <option value="3">Collectibles</option>
                 <option value="4">Domain</option>
@@ -109,7 +109,7 @@ const Explore = () => {
             <div className="col-12 col-sm-6 col-lg-3">
               <h5>Items</h5>
               <select className="filter-select bg-gray w-100">
-                <option selected value="1">All</option>
+                <option value="1">All</option>
                 <option value="2">Single</option>
                 <option value="3">Bundle</option>
               </select>
@@ -117,19 +117,19 @@ const Explore = () => {
             <div className="col-12 col-sm-6 col-lg-3">
               <h5>Sort By</h5>
               <select className="filter-select bg-gray w-100">
-                <option selected value="1">Recently Added</option>
+                <option value="1">Recently Added</option>
                 <option value="2">Recently Sold</option>
                 <option value="3">Ending Soon</option>
               </select>
             </div>
             <div className="col-12 col-sm-6 col-lg-3">
               <h5>Price</h5>
-              <input id="filterRange" type="text" name="filterByValue" value="" data-min="100" data-max="1000" data-from="300" data-to="750" data-type="double" data-prefix="" data-grid="false" />
+              <input id="filterRange" type="text" name="filterByValue" defaultValue="" data-min="100" data-max="1000" data-from="300" data-to="750" data-type="double" data-prefix="" data-grid="false" />
             </div>
             <div className="col-12 col-sm-6 col-lg-3">
               <h5>Ratings</h5>
               <select className="filter-select bg-gray w-100">
-                <option selected value="1">5 Star</option>
+                <option value="1">5 Star</option>
                 <option value="2">4 Star &amp; Above</option>
                 <option value="3">3 Star &amp; Above</option>
                 <option value="4">2 Star &amp; Above</option>
@@ -139,7 +139,7 @@ const Explore = () => {
             <div className="col-12 col-sm-6 col-lg-3">
               <h5>Chains</h5>
               <select className="filter-select bg-gray w-100">
-                <option selected value="1">Bitcoin</option>
+                <option value="1">Bitcoin</option>
                 <option value="2">Ethereum</option>
                 <option value="3">Tether</option>
               </select>

@@ -1,4 +1,5 @@
 import { clearWalletProvider, connectToWallet, web3ModalProvider } from "./Web3Modal";
+import { APIclient } from '../../constants'
 
 export let accountAddress = undefined
 export let web3Modal = undefined
@@ -13,6 +14,17 @@ async function updateAccount(setWallet) {
     web3ModalProvider.on("accountsChanged", (accounts) => {
       localStorage.setItem('wallet', accounts[0])
       setWallet(accounts[0])
+      await APIclient.get(`/user_of_wallet/${accounts[0]}`)
+      .then((res)=>{
+        dispatch({
+          type: UPDATE_PROFILE,
+          userInfo: res
+        })
+      })
+      .catch((err)=>{
+        console.log("API user_of_wallet error", err)
+      });
+
     });
     web3ModalProvider.on("chainChanged", (id) => {
       window.location.reload()

@@ -85,6 +85,16 @@ const auctions = [
 ]
 
 const Profile = () => {
+  const [ fullName, setFullName ] = useState("")
+  const [ country, setCountry ] = useState("")
+  const [ birth, setBirth] = useState("")
+  const [ addr, setAddr] = useState("")
+  
+  const onSubmit = (e) => {
+    e.preventDefault();
+    
+  }
+
   useEffect(() => {
     // script.src = "/js/all-js-libraries.js"
     // script.async = true
@@ -98,6 +108,8 @@ const Profile = () => {
     document.body.appendChild(script)
 
   }, [])
+
+
   return (
     <>
       <div class="author-top-content bg-img bg-overlay" style={{ backgroundImage: 'url(img/bg-img/44.jpg)' }}>
@@ -189,7 +201,7 @@ const Profile = () => {
                               <input class="form-control bg-gray border-0" type="text" name="UserName" placeholder="Full Name" />
                             </div>
                             <div class="col-12">
-                              <button class="btn btn-primary w-100 rounded-pill" type="submit"><i class="bi bi-sd-card-fill me-1"></i>Save changes</button>
+                              <button class="btn btn-primary w-100 rounded-pill" type="submit" onSubmit={onsubmit}><i class="bi bi-sd-card-fill me-1"></i>Save changes</button>
                             </div>
                           </div>
                         </form>
